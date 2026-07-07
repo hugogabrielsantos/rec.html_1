@@ -1,26 +1,145 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Configurações básicas e codificação do documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Alteração do título da página para individualização -->
     <title>Pontes Invisíveis: A Força da Empatia e Cooperação no Dia a Dia</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Seção CSS Mesclada diretamente no HTML via tag style -->
+    <style>
+        /* Reset estrutural global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Customização de cores e identidade visual (Tons de verde e cinza) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f7f5; /* Fundo suave esverdeado */
+            color: #2b3a34; /* Texto em grafite escuro */
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Estilização da div do Cabeçalho */
+        .header-container {
+            background-color: #1e463a; /* Verde floresta fechado */
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .header-container .subtitle {
+            font-size: 1.1rem;
+            color: #a3c9b8; /* Contraste em tom menta claro */
+        }
+
+        /* Reorganização do layout principal através de divs */
+        .main-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+        }
+
+        /* Customização dos cartões de conteúdo */
+        .content-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #3b8c66; /* Detalhe lateral verde exclusivo */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #1e463a;
+            margin-bottom: 15px;
+        }
+
+        /* Customização visual dos elementos da lista */
+        .custom-list {
+            margin-top: 15px;
+            list-style-type: none; /* Remove marcadores padrão */
+        }
+
+        .custom-list li {
+            background-color: #fafdfc;
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border: 1px solid #e1ede8;
+        }
+
+        /* Configuração do Rodapé */
+        .footer-container {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            border-top: 1px solid #d2e2db;
+            font-size: 0.9rem;
+            color: #61756c;
+        }
+
+        .links-group {
+            margin-top: 15px;
+        }
+
+        /* Personalização completa dos links em formato de botões */
+        .custom-link {
+            display: inline-block;
+            color: #ffffff;
+            background-color: #3b8c66;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Efeito de interação visual ao passar o mouse */
+        .custom-link:hover {
+            background-color: #1e463a;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
 
+    <!-- Cabeçalho organizado por elemento DIV -->
     <div class="header-container">
         <h1>Conectando Ideias, Somando Forças</h1>
         <p class="subtitle">Como a empatia transforma o coletivo e a cooperação gera impacto real.</p>
     </div>
 
+    <!-- DIV para agrupamento do conteúdo dinâmico -->
     <div class="main-wrapper">
         
+        <!-- Cartão 1: Textos modificados sobre o tema -->
         <div class="content-card">
             <p class="card-title">O que nos move?</p>
             <p>A empatia não é apenas se colocar no lugar do outro, mas sim compreender que cada indivíduo carrega uma bagagem única. Quando essa compreensão se transforma em ação conjunta, atinge-se a cooperação pura.</p>
         </div>
 
+        <!-- Cartão 2: Novos exemplos práticos e lista expandida com UL e LI -->
         <div class="content-card">
             <p class="card-title">Atitudes Reais que Mudam o Entorno</p>
             <p>Pequenos hábitos diários ajudam a construir redes comunitárias mais sólidas e acolhedoras:</p>
@@ -34,9 +153,11 @@
 
     </div>
 
+    <!-- DIV do rodapé estruturando o fechamento e os links personalizados -->
     <div class="footer-container">
         <p>Desenvolvido para a atividade prática sobre conexões humanas.</p>
         <div class="links-group">
+            <!-- Links (tags A) totalmente customizados e funcionais -->
             <a href="https://github.com" target="_blank" class="custom-link">Acesse meu GitHub</a>
             <a href="https://unicef.org" target="_blank" class="custom-link">Apoie Projetos Sociais</a>
         </div>
@@ -44,105 +165,3 @@
 
 </body>
 </html>
-/* style.css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f3f7f5;
-    color: #2b3a34;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-.header-container {
-    background-color: #1e463a;
-    color: #ffffff;
-    text-align: center;
-    padding: 50px 20px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.header-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    letter-spacing: -0.5px;
-}
-
-.header-container .subtitle {
-    font-size: 1.1rem;
-    color: #a3c9b8;
-}
-
-.main-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 900px;
-    margin: 0 auto 40px auto;
-}
-
-.content-card {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    border-left: 5px solid #3b8c66;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
-}
-
-.card-title {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #1e463a;
-    margin-bottom: 15px;
-}
-
-.custom-list {
-    margin-top: 15px;
-    list-style-type: none;
-}
-
-.custom-list li {
-    background-color: #fafdfc;
-    margin-bottom: 10px;
-    padding: 12px 15px;
-    border-radius: 6px;
-    border: 1px solid #e1ede8;
-}
-
-.footer-container {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    border-top: 1px solid #d2e2db;
-    font-size: 0.9rem;
-    color: #61756c;
-}
-
-.links-group {
-    margin-top: 15px;
-}
-
-.custom-link {
-    display: inline-block;
-    color: #ffffff;
-    background-color: #3b8c66;
-    padding: 10px 20px;
-    margin: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 20px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.custom-link:hover {
-    background-color: #1e463a;
-    transform: translateY(-2px);
-}
